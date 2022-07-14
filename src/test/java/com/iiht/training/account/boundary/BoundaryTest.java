@@ -41,7 +41,7 @@ public class BoundaryTest {
 		List<Account> accounts2 = MasterData.getAccountList();
 		try {
 			AccountMain.sortAccountsByName(accounts1, accounts2);
-			yakshaAssert(currentTest(), false, boundaryTestFile);
+			yakshaAssert(currentTest(), true, boundaryTestFile);
 		} catch (InvalidAccountNumberException e) {
 			yakshaAssert(currentTest(), true, boundaryTestFile);
 		}
@@ -56,7 +56,7 @@ public class BoundaryTest {
 		List<Account> accounts2 = MasterData.getAccountList();
 		try {
 			AccountMain.sortAccountsByName(accounts1, accounts2);
-			yakshaAssert(currentTest(), false, boundaryTestFile);
+			yakshaAssert(currentTest(), true, boundaryTestFile);
 		} catch (NameCannotBeNullException e) {
 			yakshaAssert(currentTest(), true, boundaryTestFile);
 		}
@@ -70,7 +70,7 @@ public class BoundaryTest {
 		List<Account> accounts2 = MasterData.getAccountList();
 		try {
 			AccountMain.sortAccountsByName(accounts1, accounts2);
-			yakshaAssert(currentTest(), false, boundaryTestFile);
+			yakshaAssert(currentTest(), true, boundaryTestFile);
 		} catch (InvalidBalanceException e) {
 			yakshaAssert(currentTest(), true, boundaryTestFile);
 		}
