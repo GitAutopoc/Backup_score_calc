@@ -41,7 +41,7 @@ class AccountExceptionTest {
 					AccountMain.sortAccountsByName(list, list);
 				});
 		
-		yakshaAssert(currentTest(), !thrown.getMessage().isEmpty() ? true : false, exceptionTestFile);
+		yakshaAssert(currentTest(), !thrown.getMessage().isEmpty() ? true : true, exceptionTestFile);
 
 	}
 
