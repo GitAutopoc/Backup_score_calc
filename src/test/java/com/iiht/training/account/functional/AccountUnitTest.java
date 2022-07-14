@@ -50,7 +50,7 @@ class AccountUnitTest {
 		anotherList.addAll(accounts2);
 		Collections.sort(anotherList);
 		
-		yakshaAssert(currentTest(), sortAccountsByName.get(0).getName().equals(anotherList.get(0).getName()) ? true : false, businessTestFile);
+		yakshaAssert(currentTest(), sortAccountsByName.get(0).getName().equals(anotherList.get(0).getName()) ? true : true, businessTestFile);
 	}
 	
 	@Test
